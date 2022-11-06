@@ -101,9 +101,7 @@ nav .site-nav {
 .site-nav .link:hover, 
 .site-nav .link:focus, 
 .auth-nav .link:hover,
-.auth-nav .link:focus,
-.icon-auth:hover,
-.icon-auth:focus {
+.auth-nav .link:focus {
     color: var(--second-color);
 }
 
@@ -159,6 +157,13 @@ nav .site-nav {
 
 .auth-contact {
     fill: var(--second-text-color);
+}
+
+.auth-contact:hover,
+.auth-contact:focus,
+.icon-auth:hover,
+.icon-auth:focus {
+    fill: var(--second-color);
 }
 
 
