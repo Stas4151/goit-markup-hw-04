@@ -474,14 +474,63 @@ nav .site-nav {
     color: var(--primary-site-color);
 }
 
-.footer {
+.logo-footer {
     display: flex;
 }
 
-.footer-social {
-    display: flex;
-    
+.footer-adress {
+    display: inline-block;
+
 }
+.footer-social {
+    display: inline-block;
+    align-items: flex-start;
+    margin-left: 70px;
+}
+
+.footer-join {
+    margin-bottom: 20px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.03em;
+    color: var(--primary-site-color);
+}
+
+.footer-social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-item-join {
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.social-item-join:hover,
+.social-item-join:focus {
+    background-color: var(--second-color);
+}
+
+.footer-socials {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    fill: var(--primary-site-color);
+}
+
+/* .footer-socials {
+    fill: var(--primary-site-color);
+} */
 
 .footer, .adress {
     font-style: normal;
