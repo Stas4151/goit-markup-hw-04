@@ -7,6 +7,7 @@
     --background-color-site: #2F303A;
     --team-color: #F5F4FA;
     --contacts-color: rgba(255, 255, 255, 0.6);
+    --links-color: #AFB1B8;
 }
 
 body {
@@ -100,7 +101,9 @@ nav .site-nav {
 .site-nav .link:hover, 
 .site-nav .link:focus, 
 .auth-nav .link:hover,
-.auth-nav .link:focus {
+.auth-nav .link:focus,
+.icon-auth:hover,
+.icon-auth:focus {
     color: var(--second-color);
 }
 
@@ -143,9 +146,36 @@ nav .site-nav {
     display: flex;
 }
 
-.mail-auth {
-    margin-right: 50px;
+.auth-contact .link:nth-child(1) {
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.icon-auth {
+    margin-right: 10px;
+}
+
+.auth-contact {
+    fill: var(--second-text-color);
+}
+
+
+
+/* .mail-auth-icon::before {
+    content: "";
+    width: 16px;
+    height: 12px;
+    background-size: contain;
+    margin-right: 10px;
+    background-image: url(../img/svg/envelope.svg);
+}
+
+.mail-auth .mail-auth-icon:hover {
+    color: var(--second-color);
+} */
+
 
 /* Герой */
 
@@ -240,22 +270,15 @@ nav .site-nav {
     margin-bottom: 10px;
 }
 
-.feature-text > .thumb {
+.feature-icon {
     display: flex;
-    width: 70px;
-    height: 70px;
+    justify-content: center;
     padding: 25px 100px;
     margin-bottom: 30px;
-
-    background-color: burlywood;
-}
-
-.feature-icons {
-   width: 100%;
-   height: 100%;
-   display: flex;
-   align-items: center;
-   justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    
+    background-color: var(--team-color);
 }
 
 /* Чим ми займаємось */
@@ -345,6 +368,93 @@ nav .site-nav {
     margin-bottom: 10px;
 }
 
+.social-icons {
+    display: flex;
+    justify-content: center;
+    padding: 16px 0px;
+}
+
+.social-item {
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: var(--primary-site-color);
+}
+
+.social-item:last-child {
+    margin-right: 0;
+}
+
+.social-item:hover,
+.social-item:focus {
+    background-color: var(--second-color);
+}
+
+.social-link {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+
+    fill: var(--links-color);
+}
+
+.social-link:hover,
+.social-link:focus {
+    fill: var(--primary-site-color);
+}
+
+ /* Постійні клієнти */
+
+ .clients {
+    padding-bottom: 94px;
+ }
+
+ .client-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .clients-goup {
+    display: flex;
+    margin-right: 30px;
+    border: 1px solid var(--links-color);
+    border-radius: 4px;
+ }
+
+ .clients-goup:last-child {
+    margin-right: 0;
+}
+
+.clients-goup:hover,
+.clients-goup:focus {
+    border-color: var(--second-color);
+  }
+
+ .clients-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 170px;
+    min-height: 90px;
+
+    fill: var(--links-color);
+ }
+
+.clients-card:last-child {
+    margin-right: 0;
+  }
+
+.clients-card:hover,
+.clients-card:focus {
+    fill: var(--second-color);
+    
+}
+
+
 /* Підвал */
 
 .logo-footer-first, .logo-footer-second {
@@ -362,6 +472,15 @@ nav .site-nav {
 
 .logo-footer-second {
     color: var(--primary-site-color);
+}
+
+.footer {
+    display: flex;
+}
+
+.footer-social {
+    display: flex;
+    
 }
 
 .footer, .adress {
