@@ -374,7 +374,7 @@ header {
     background-color: var(--primary-site-color);
 }
 
-.team-card:last-child(1) {
+.team-card:last-child {
     margin-right: 0;
 }
 
@@ -454,8 +454,6 @@ header {
  .clients-goup {
     display: flex;
     margin-right: 30px;
-    border: 1px solid var(--links-color);
-    border-radius: 4px;
  }
 
  .clients-goup:last-child {
@@ -473,6 +471,8 @@ header {
     align-items: center;
     width: 170px;
     height: 90px;
+    border: 1px solid var(--links-color);
+    border-radius: 4px;
 
     fill: var(--links-color);
  }
